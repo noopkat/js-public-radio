@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "Hey! I'm going to install a bunch of stuff."
-for p in async intel-hex avrgirl-chips-json
+for p in async intel-hex avrgirl-chips-json avrgirl-ispmkii
 do
   echo "npm installing $p..."
   npm install $p
