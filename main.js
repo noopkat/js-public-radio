@@ -1,5 +1,4 @@
 (function() {
-  var usb = require('usb');
   var AvrgirlIspmkii = require('avrgirl-ispmkii');
   var chips = require('avrgirl-chips-json');
   var intelhex = require('intel-hex');
