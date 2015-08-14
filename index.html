@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Hello World!</title>
+    <title>Hello from Public Radio</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
   </head>
   <body>
-    <h1>PubRad</h1>
 
     <form id="flashForm" action="#">
+      <h1>Public Radio</h1>
       <fieldset>
-        <label for="frequency">Frequency</label>
+        <label for="frequency">frequency</label>
         <input name="frequency" id="frequency" type="text" value="97.1"/>
       </fieldset>
 
@@ -27,11 +28,13 @@
         <input name="cspacing" id="cspacing" type="text" value="0" />
       </fieldset>
 
-      <input type="submit" value="Flash Radio" />
+      <input type="submit" value="flash radio" />
+
+      <div id="circle-container"></div>
 
     </form>
 
-    <div id="circle-container" style="width:150px; height:150px;"></div>
+
 
     <script src="lib/progressbar.min.js"></script>
     <script src="lib/eeprom.js"></script>
