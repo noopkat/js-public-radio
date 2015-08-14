@@ -15,6 +15,11 @@
   var eeBin = intelhex.parse(ee).data;
   var sig = new Buffer('AVRISP_MK2');
 
+  var eeprom = makeEeprom(93.9);
+
+  document.write('eeprom:', eeprom.toString('hex'));
+  document.write('parsed eeprom:', eeBin.toString('hex'));
+
   avrgirl.on('ready', function() {
     // run demos
     async.series([
@@ -46,7 +51,7 @@
       },
       avrgirl.eraseChip.bind(avrgirl),
       avrgirl.writeMem.bind(avrgirl, 'flash', prBin),
-      avrgirl.writeMem.bind(avrgirl, 'eeprom', eeBin),
+      avrgirl.writeMem.bind(avrgirl, 'eeprom', eeprom),
       avrgirl.exitProgrammingMode.bind(avrgirl)
       ], function (error) {
         console.log(error);
