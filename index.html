@@ -5,6 +5,35 @@
   </head>
   <body>
     <h1>PubRad</h1>
+
+    <form id="flashForm" action="#">
+      <fieldset>
+        <label for="frequency">Frequency</label>
+        <input name="frequency" id="frequency" type="text" value="97.1"/>
+      </fieldset>
+
+      <fieldset>
+        <label for="band">band</label>
+        <input name="band" id="band" type="text" value="0" />
+      </fieldset>
+
+      <fieldset>
+        <label for="deemphasis">de-emphasis</label>
+        <input name="deemphasis" id="deemphasis" type="text" value="0" />
+      </fieldset>
+
+      <fieldset>
+        <label for="cspacing">channel spacing</label>
+        <input name="cspacing" id="cspacing" type="text" value="0" />
+      </fieldset>
+
+      <input type="submit" value="Flash Radio" />
+
+    </form>
+
+    <div id="circle-container" style="width:150px; height:150px;"></div>
+
+    <script src="lib/progressbar.min.js"></script>
     <script src="lib/eeprom.js"></script>
     <script src="lib/main.js"></script>
   </body>
