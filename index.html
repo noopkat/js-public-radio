@@ -13,20 +13,23 @@
         <input name="frequency" id="frequency" type="text" value="97.1"/>
       </fieldset>
 
-      <fieldset>
-        <label for="band">band</label>
-        <input name="band" id="band" type="text" value="0" />
-      </fieldset>
+      <a href="#" id="advanced-link">advanced settings</a>
+      <div id="advanced" style="display:none">
+        <fieldset>
+          <label for="band">band</label>
+          <input name="band" id="band" type="text" value="0" />
+        </fieldset>
 
-      <fieldset>
-        <label for="deemphasis">de-emphasis</label>
-        <input name="deemphasis" id="deemphasis" type="text" value="0" />
-      </fieldset>
+        <fieldset>
+          <label for="deemphasis">de-emphasis</label>
+          <input name="deemphasis" id="deemphasis" type="text" value="0" />
+        </fieldset>
 
-      <fieldset>
-        <label for="cspacing">channel spacing</label>
-        <input name="cspacing" id="cspacing" type="text" value="0" />
-      </fieldset>
+        <fieldset>
+          <label for="cspacing">channel spacing</label>
+          <input name="cspacing" id="cspacing" type="text" value="0" />
+        </fieldset>
+      </div>
 
       <input type="submit" value="flash radio" />
       <div id="circle-container"></div>
@@ -34,6 +37,7 @@
 
 
 
+    <script src="lib/jquery-1.11.3.min.js"></script>
     <script src="lib/progressbar.min.js"></script>
     <script src="lib/eeprom.js"></script>
     <script src="lib/main.js"></script>
